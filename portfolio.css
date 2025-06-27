@@ -1,0 +1,131 @@
+
+/* === RÉGLAGES GÉNÉRAUX RESPONSIVE === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+h2{
+color: blue;
+}
+
+.container, .container1, .container2, .container3, .container5 {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+/* === TEXTES === */
+h1, h2, h3, h4, h5, p {
+  word-wrap: break-word;
+}
+
+/* === FORMULAIRE === */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
+/* === HERO SECTION === */
+.hero {
+  background: linear-gradient(to right, #e3f2fd, #f8f9fa);
+}
+
+/* === RESPONSIVE MEDIA QUERIES === */
+@media (max-width: 768px) {
+  .hero .col-md-4,
+  .hero .col-md-8 {
+    text-align: center;
+  }
+  
+
+  .hero .col-md-4 img {
+    margin-bottom: 20px;
+  }
+
+  .navbar .navbar-nav {
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+  }
+
+  .navbar .nav-link {
+    padding: 10px 0;
+  }
+
+  .contact .row > div {
+    margin-bottom: 30px;
+  }
+
+  .social-icon {
+    width: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .col-sm-6,
+  .col-md-4,
+  .col-lg-3 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/* === DARK MODE (optionnel si toggle actif) === */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar,
+.dark-mode .card,
+.dark-mode .bg-light,
+.dark-mode .bg-white {
+  background-color: #1e1e1e !important;
+  color: #ffffff;
+}
+
+.dark-mode .progress-bar {
+  color: #000;
+}
+.mb-5{
+    color: blue;
+}
+#writer{
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}

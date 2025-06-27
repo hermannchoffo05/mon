@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+     <script src="portfolio.js" defer></script>
+</head>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  document.getElementById("toggle-dark").addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
+
+
+<body>
+    
+     
+   <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Mon Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link active" href="#accueil">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#a-propos">À Propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+      </ul>
+      <button id="toggle-dark" class="btn btn-sm btn-outline-dark ms-3">🌙</button>
+    </div>
+  </div>
+</nav>
+
+
+    <main>
+
+        <!-- ACCUEIL -->
+         
+         <div class="col-md-6 mb-4" data-aos="fade-up"></div>
+        <section id="accueil" class="hero py-5 bg-light">
+            
+            <div class="container2">
+                <div class="row align-items-center text-center text-md-start">
+                    <div class="col-md-4 mb4 mb-4 mb-md-0">
+                        <img src="photo.png" class="img-fluid rounded" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div id="writer"></div>
+                        
+                        <p>Développeur Web | Étudiant à l'IAI-Cameroun</p>
+                        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- À PROPOS -->
+        
+         <div class="col-md-6 mb-4" data-aos="fade-up"></div>
+        <section id="a-propos" class="a-propos py-5 bg-light">
+            <div class="container5">
+                <h2 class="text-center mb-4">À Propos de Moi</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4 mb-4 mb-md-0 m text-center">
+                        <img src="photo2.jpg" class="img-fluid rounded" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            Je suis CHOFFO Hermann, étudiant age de 20 ans et passionné par la création d'expériences web intuitives et performantes. J'ai travaillé sur divers projets allant des sites vitrines aux applications web.
+                        </p>
+                        <p>
+                            Mon objectif est de transformer des idées en solutions numériques innovantes. J'aime apprendre de nouvelles technologies et relever des défis.
+                        </p>
+                        <a href="cv.pdf" class="btn btn-outline-secondary mt-3 btn-cv" download>Télécharger mon CV</a>
+
+
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS -->
+         <div class="col-md-6 mb-4" data-aos="fade-up"></div>
+        <section id="projets" class="projets py-5">
+            <div class="container3">
+                <h2 class="text-center mb-4">Projets</h2>
+                <div class="row">
+                   <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+
+                        <div class="card h-100">
+                            <img src="ged.png" class="card-img-top projet-img" alt="Projet GED">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Application de Gestion électronique de documents</h3>
+                                <p class="card-text">Notre système permet aux entreprises de gérer leurs documents de manière efficace, de leur création à leur archivage.</p>
+                                <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card h-100">
+                           <img src="https://via.placeholder.com/300x200" class="card-img-top projet-img" alt="Projet Pressing">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Site Web pour un Pressing</h3>
+                                <p class="card-text">Vitrine numérique pour présenter les services et les tarifs d’un pressing.</p>
+                                <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card h-100">
+                            <img src="cuisine.png" class="card-img-top projet-img" alt="Site de cuisine">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Site web de cuisine</h3>
+                   <p class="card-text">Plateforme culinaire moderne permettant aux utilisateurs de découvrir, partager et enregistrer des recettes de cuisine. </p>
+
+                                <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                        <div class="card h-100">
+                           <img src="ospi.png" class="card-img-top projet-img" alt="Gestion hôpital">
+
+                            <div class="card-body">
+                                <h3 class="card-title">Application de gestion d'un hopital</h3>
+                                <p class="card-text">Optimisez la gestion de votre hopital de A a Z avec notre application intuitive.</p>
+                                <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- SERVICES -->
+<section id="services" class="services py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Services</h2>
+    <div class="row text-center">
+      <!-- Service 1 -->
+      <div class="col-sm-6 col-md-3 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="web1.jpg" alt="Développement Web" class="card-img-top service-img">
+          <div class="card-body">
+            <h5 class="card-title">Conception d'Applications Web</h5>
+            <p class="card-text small">Création de sites dynamiques et responsives avec des technologies modernes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-sm-6 col-md-3 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="bd2.jpg" alt="Base de données" class="card-img-top service-img">
+          <div class="card-body">
+            <h5 class="card-title">Gestion des Bases de Données</h5>
+            <p class="card-text small">Conception, administration et sécurisation de bases de données relationnelles.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-sm-6 col-md-3 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="cv1.jfif" alt="Création de CV" class="card-img-top service-img">
+          <div class="card-body">
+            <h5 class="card-title">Création de CV Personnalisés</h5>
+            <p class="card-text small">Réalisation de CV professionnels et originaux sur mesure.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-sm-6 col-md-3 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="pres2.jpg" alt="Présentation" class="card-img-top service-img">
+          <div class="card-body">
+            <h5 class="card-title">Création de Présentations</h5>
+            <p class="card-text small">Captivez votre public avec des présentations percutantes et professionnelles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- COMPETENCES -->
+<section id="competences" class="competences py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Compétences</h2>
+
+    <div class="row gy-4">
+
+      <!-- FRONT-END -->
+      <div class="col-md-6 col-lg-6">
+        <div class="p-3 bg-white rounded shadow-sm h-100 competence-box">
+          <h4 class="titre-competence mb-3"><i class="fas fa-code me-2"></i>Front-End</h4>
+
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-2" style="min-width: 80px;">HTML</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-danger" style="width: 95%;">95%</div></div>
+          </div>
+
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-2" style="min-width: 100px;">CSS</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-primary" style="width: 85%;">85%</div></div>
+          </div>
+
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-2" style="min-width: 100px;">JavaScript</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-warning" style="width: 60%;">60%</div></div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <span class="me-2" style="min-width: 100px;">Design Responsif</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-success" style="width: 70%;">70%</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACK-END -->
+      <div class="col-md-6 col-lg-6">
+        <div class="p-3 bg-white rounded shadow-sm h-100 competence-box">
+          <h4 class="titre-competence mb-3"><i class="fas fa-server me-2"></i>Back-End</h4>
+
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-2" style="min-width: 100px;">PHP</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-secondary" style="width: 75%;">75%</div></div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <span class="me-2" style="min-width: 100px;">Java</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-warning" style="width: 65%;">65%</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTILS DE CONCEPTION GRAPHIQUE -->
+      <div class="col-md-6 col-lg-6">
+        <div class="p-3 bg-white rounded shadow-sm h-100 competence-box">
+          <h4 class="titre-competence mb-3"><i class="fas fa-paint-brush me-2"></i>Outils de Conception Graphique</h4>
+
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-2" style="min-width: 100px;">Adobe Illustrator</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-danger" style="width: 80%;">80%</div></div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <span class="me-2" style="min-width: 100px;">Figma</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-info" style="width: 65%;">65%</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUITE OFFICE -->
+      <div class="col-md-6 col-lg-6">
+        <div class="p-3 bg-white rounded shadow-sm h-100 competence-box">
+          <h4 class="titre-competence mb-3"><i class="fas fa-file-word me-2"></i>Suite Office</h4>
+
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-2" style="min-width: 100px;">Word</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-primary" style="width: 95%;">95%</div></div>
+          </div>
+
+          <div class="d-flex align-items-center mb-2">
+            <span class="me-2" style="min-width: 100px;">Excel</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-success" style="width: 70%;">70%</div></div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <span class="me-2" style="min-width: 100px;">PowerPoint</span>
+            <div class="progress flex-grow-1"><div class="progress-bar bg-info" style="width: 80%;">80%</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+         
+     <!-- CONTACT -->
+<section id="contact" class="contact py-5 bg-light">
+
+  <div class="container">
+    <h2 class="text-center mb-5">Contactez-moi</h2>
+    <div class="row">
+
+     <!-- Informations de contact -->
+<div class="col-md-6 mb-4">
+  <div class="bg-light p-4 shadow rounded h-100 text-dark">
+    <h4 class="mb-4"><i class="fas fa-info-circle me-2 text-primary"></i>Mes Coordonnées</h4>
+    <p><i class="fas fa-map-marker-alt me-2 text-success"></i><strong>Lieu :</strong> Bafoussam, Cameroun</p>
+    <p><i class="fas fa-phone-alt me-2 text-primary"></i><strong>Téléphone :</strong> +237 687406914 / 652705137</p>
+    <p><i class="fas fa-envelope me-2 text-danger"></i><strong>Email :</strong> hermannchoffo05@gmail.com</p>
+
+    <div class="mt-4">
+      <h5 class="text-dark">Mes Réseaux :</h5>
+      <div class="d-flex gap-3 mt-2">
+        <a href="#"><img src="whatsapp.png" alt="WhatsApp" class="social-icon" style="width: 32px;"></a>
+        <a href="#"><img src="facebook.png" alt="Facebook" class="social-icon" style="width: 32px;"></a>
+        <a href="#"><img src="instagram.png" alt="Instagram" class="social-icon" style="width: 32px;"></a>
+        <a href="#"><img src="twitter.png" alt="Twitter" class="social-icon" style="width: 32px;"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Formulaire de contact -->
+      <div class="col-md-6">
+        <div class="bg-white p-4 shadow rounded h-100">
+          <form class="contact-form">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom :</label>
+              <input type="text" class="form-control" id="nom" name="nom" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email :</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message :</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-success">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <script src="portfolio.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
