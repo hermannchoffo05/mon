@@ -1,13 +1,4 @@
-    const text = "Bienvenue je suis CHOFFO Hermann"
-    let i=0;
-    function typewriter(){
-        if(i<text.length){
-            document.getElementById("writer").innerHTML+= text.charAt(i);
-            i++;
-            setTimeout(typewriter,70);
-        }
-    }
-    window.onload = typewriter; 
+   
      
      
      const navSlide = () => {
